@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery plugin ZippyShare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="title" content="jQuery plugin ZippyShare" />
+    <meta name="description" content="Zippyshare embed using jQuery." />
+    <meta name="robots" content="all">
+    <meta name="author" content="Zzbaivong">
+    <meta property="og:title" content="jQuery plugin ZippyShare" />
+    <meta property="og:description" content="Zippyshare embed using jQuery." />
+    <meta property="og:url" content="http://baivong.github.io/zippy/" />
+    <meta property="og:image" content="http://i.imgur.com/M3aRLA8.jpg" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <!--[if !IE 7]>
+        <style type="text/css">
+            #main {display:table;height:100%}
+        </style>
+    <![endif]-->
+</head>
+
+<body>
+    <main id="wrap">
+        <div id="main">
+            <h1>jQuery plugin ZippyShare</h1>
+            <div id="content">
+                <div class="test1"></div>
+                <p><a class="test2" href="http://www20.zippyshare.com/v/58250579/file.html">http://www20.zippyshare.com/v/58250579/file.html</a></p>
+                <p><a class="test2" href="http://www34.zippyshare.com/v/84207532/file.html">http://www34.zippyshare.com/v/84207532/file.html</a></p>
+        </div>
+        <div id="ribbon" class="ribbon right black">
+            <a href="https://github.com/baivong/zippy">Fork me on GitHub</a>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="https://github.com/baivong/zippy">jQuery plugin ZippyShare</a> is maintained by <a href="https://github.com/baivong">baivong</a>
+    </footer>
+
+    <script src="../src/jquery.min.js" type="text/javascript"></script>
+    <script src="../dist/jquery.zippy.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+        var ribbon = ["black", "red", "blue", "green", "orange", "purple", "grey"][Math.floor(Math.random() * 7)];
+        $("#ribbon").removeClass("black red blue green orange purple grey").addClass(ribbon);
+    </script>
+</body>
+
+</html>

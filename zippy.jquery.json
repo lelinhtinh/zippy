@@ -1,0 +1,33 @@
+{
+    "name": "Zippy",
+    "title": "jQuery plugin ZippyShare",
+    "description": "Zippyshare embed using jQuery.",
+    "keywords": [
+        "zippy",
+        "zippyshare",
+        "embed",
+        "player",
+        "jquery-plugin",
+        "jquery",
+        "plugins"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "zzbaivong",
+        "email": "lhthanh.pro@gmail.com",
+        "url": "http://devs.forumvi.com"
+    },
+    "bugs": "https://github.com/baivong/zippy/issues",
+    "homepage": "https://github.com/baivong/zippy",
+    "docs": "https://github.com/baivong/zippy/blob/master/README.md",
+    "download": "https://github.com/baivong/zippy/archive/master.zip",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.4"
+    }
+}
