@@ -1,57 +1,52 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Zippy by baivong</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery plugin ZippyShare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="title" content="jQuery plugin ZippyShare" />
+    <meta name="description" content="Zippyshare embed using jQuery." />
+    <meta name="robots" content="all">
+    <meta name="author" content="Zzbaivong">
+    <meta property="og:title" content="jQuery plugin ZippyShare" />
+    <meta property="og:description" content="Zippyshare embed using jQuery." />
+    <meta property="og:url" content="http://baivong.github.io/zippy/" />
+    <meta property="og:image" content="http://i.imgur.com/M3aRLA8.jpg" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <!--[if !IE 7]>
+        <style type="text/css">
+            #main {display:table;height:100%}
+        </style>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Zippy</h1>
-        <p>Zippyshare embed using jQuery.</p>
+</head>
 
-        <p class="view"><a href="https://github.com/baivong/zippy">View the Project on GitHub <small>baivong/zippy</small></a></p>
+<body>
+    <main id="wrap">
+        <div id="main">
+            <h1>jQuery plugin ZippyShare</h1>
+            <div id="content">
+                <div class="test1"></div>
+                <p><a class="test2" href="http://www20.zippyshare.com/v/58250579/file.html">http://www20.zippyshare.com/v/58250579/file.html</a></p>
+                <p><a class="test2" href="http://www34.zippyshare.com/v/84207532/file.html">http://www34.zippyshare.com/v/84207532/file.html</a></p>
+        </div>
+        <div id="ribbon" class="ribbon right black">
+            <a href="https://github.com/baivong/zippy">Fork me on GitHub</a>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="https://github.com/baivong/zippy">jQuery plugin ZippyShare</a> is maintained by <a href="https://github.com/baivong">baivong</a>
+    </footer>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script src="script/jquery.zippy.min.js" type="text/javascript"></script>
+    <script src="script/demo.js" type="text/javascript"></script>
+    <script>
+        var ribbon = ["black", "red", "blue", "green", "orange", "purple", "grey"][Math.floor(Math.random() * 7)];
+        $("#ribbon").removeClass("black red blue green orange purple grey").addClass(ribbon);
+    </script>
+</body>
 
-        <ul>
-          <li><a href="https://github.com/baivong/zippy/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/baivong/zippy/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/baivong/zippy">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="jquery-plugin-zippyshare" class="anchor" href="#jquery-plugin-zippyshare" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery plugin ZippyShare</h1>
-
-<p>Zippyshare embed using jQuery.</p>
-
-<h2>
-<a id="quick-use" class="anchor" href="#quick-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick use</h2>
-
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>player<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
-
-<div class="highlight highlight-source-js"><pre><span class="pl-c">// http://www26.zippyshare.com/v/XVcARUzL/file.html</span>
-<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#player<span class="pl-pds">"</span></span>).<span class="pl-en">zippy</span>({
-    www<span class="pl-k">:</span> <span class="pl-c1">26</span>,
-    file<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>XVcARUzL<span class="pl-pds">"</span></span>,
-    auto<span class="pl-k">:</span> <span class="pl-c1">true</span>
-});
-</pre></div>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/baivong">baivong</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
 </html>
